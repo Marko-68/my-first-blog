@@ -10,25 +10,44 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <br>
+            <br>
+             <a align="left" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-        <div>
-        <h2><a href="">Django poszt</a></h2>
-        <p>:)))</p>
-        </div>
-        <div>
-        <h2><a href="">DATA</a></h2>
-        <p></p></h2>
+            <h1><a href="/">Adatkezelő Weblap</a></h1>
         </div>
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-                </div>
-            </div>
+
         </div>
+
+
+        <ul style="list-style-type:none;">
+                <li>
+                    <h2></h2>
+                    <p></p>
+                </li>
+                <br>
+                <li><div>
+                <h2><a href="">DATA</a></h2>
+                <p></p>
+                </div></li>
+
+                <ul style="list-style-type:none;">
+                    <li>
+                        <div><h3>... adatai</h3></div>
+                        <br>
+                        <ul style="list-style-type:none;">
+                            <li><h4>Név</h4>
+                            <p>..</p></li>
+                            <li>
+                                <h4>Jelszavak</h4>
+                                <p>...</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </ul>
     </body>
 </html>
